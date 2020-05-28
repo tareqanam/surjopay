@@ -1,7 +1,7 @@
 # shurjopay Integration Library 
 Shurjopay integration Library 
 
-#####How to use it aka Quickstart
+###How to use it aka Quickstart
 
 1. Install: 
     
