@@ -1,13 +1,24 @@
 # shurjopay Integration Library 
 Shurjopay integration Library 
 
-######How to use it aka Quickstart
+#####How to use it aka Quickstart
 
 1. Install: 
     
    ``` 
     pip install shurjopay-pkg-tareq
     ```
+   To install Python package from github, you need to clone that repository.
+   
+   ```
+   git clone https://github.com/tareqanam/surjopay.git
+   ```
+   
+   Then just run the setup.py file from that directory,
+   
+   ```
+   sudo python setup.py install
+   ```
     
 2. Import shurjoPay class:
 
