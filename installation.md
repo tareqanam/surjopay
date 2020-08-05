@@ -17,11 +17,11 @@ note*
 
 e.g: http://127.0.0.1:8000/return_url/
 
-A return URL is also required to be passed to the shurjoPay where a decrypted transaction info will be post.
+This return URL is also required to be passed to the shurjoPay where a decrypted transaction info will be posted.
 so the return URL will be ```POST``` method and it will accept with ```spdata``` from shurjoPay.
 ## Installation
 
-Use the package manager to install Shuropay python package
+Use the package manager ```pip``` to install Shuropay python package
 ```
 pip install -i https://test.pypi.org/simple/ shurjopay-pkg-tareq
 ```
@@ -45,11 +45,11 @@ This ```testpay.send_request()``` will return an HTML shurjopay form you need to
 
 ![spform](spform.png)
 
-After success/faild transaction; Transaction information will be sent to your rutrun URL in encrypted form. You should be able to access those from ```spdata```
+After success/faild transaction; Transaction information will be sent to your rutrun URL in encrypted data. You should be able to access those from ```spdata```
 
 To decrypt the transaction data from return url
 
 ```
 xml = testpay.get_decrypt(spdata)
 ```
-note* this data will be in ```xml``` form to convert it in ```json``` you can use any conversion method
+note* this data will be in ```xml``` format; to convert it in ```json``` you can use any conversion method to parse.
