@@ -1,7 +1,7 @@
 # ShurjoPay
 shurjopay python integration steps
 
-##Prerequisite
+## Prerequisite
 To integrate ShurjoPay you need few credentials to access shurjopay here's a test credentials for example:
 
 ```
@@ -19,13 +19,13 @@ e.g: http://127.0.0.1:8000/return_url/
 
 A return URL is also required to be passed to the shurjoPay where a decrypted transaction info will be post.
 so the return URL will be ```POST``` method and it will accept with ```spdata``` from shurjoPay.
-##Installation
+## Installation
 
 Use the package manager to install Shuropay python package
 ```
 pip install -i https://test.pypi.org/simple/ shurjopay-pkg-tareq
 ```
-##Usage
+## Usage
 ```
 from shurjopay import shurjoPay
 
