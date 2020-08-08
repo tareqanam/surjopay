@@ -13,6 +13,9 @@ MERCHANT_PREFIX = 'NOK'
 ``` 
 note*
 
+these are stage credentials only for test purpose.
+for live integration custom credentials (Merchant_username, merchant_password, shurjopay_url, dycrypt_url, merchant_prefix) will be given to you after you purchase/enroll shurjoPay gateway.
+
 **Create a POST API/ URL** 
 
 e.g: http://127.0.0.1:8000/return_url/
@@ -35,7 +38,7 @@ testpay = shurjoPay.ShurjoPay(MERCHANT_USERNAME, MERCHANT_PASSWORD, SHURJOPAY_UR
 
 ```
 now the payment transaction can be initiated and 
-send ```client_ip```, ```transaction_id```, ```transaction_amount```, ```return_url``` with the ```send_request``` method
+send ```client_ip```, ```transaction_id``` (note: transaction id should be an unique id with the given prefix for each request. For test environment you may use "NOK".), ```transaction_amount```, ```return_url``` with the ```send_request``` method
 ```
 spform = testpay.send_request('127.0.0.1', 'NOK151545452', 50, "http://127.0.0.1:8000/return_url/")
 ```
