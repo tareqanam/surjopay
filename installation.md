@@ -5,8 +5,8 @@ shurjopay python integration steps
 To integrate ShurjoPay you need few credentials to access shurjopay here's a test credentials for example:
 
 ```
-MERCHANT_USERNAME = 'spaytest'
-MERCHANT_PASSWORD = 'JehPNXF58rXs'
+MERCHANT_USERNAME = '******'
+MERCHANT_PASSWORD = '**********'
 SHURJOPAY_URL = 'https://shurjotest.com/sp-data.php'
 DECRYPT_URL = 'https://shurjotest.com/merchant/decrypt.php'
 MERCHANT_PREFIX = 'NOK'
